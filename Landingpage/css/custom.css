@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+
+
+
+body {
+margin:0;
+padding:0;
+align-items: center;
+}
+
+.content {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.banner {
+    min-height: 600px;
+    background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 0 20px black;
+}
+
+.imagens {
+    margin: 0 auto;       
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 350px;;
+    height: 350px;
+}
+.img1-1 {
+  margin-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 350px;
+    transform-origin: left;
+}
+.imagens:hover .img1-1 {
+    transition: 5s;
+    transition-delay: 1s;
+    transform: translateX(50px);
+    opacity: 0;
+    filter: blur(10px);
+}
+.img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    transform-origin: left;
+}
+.content .imagens:hover .img1 {
+    transition: 4s;
+    transition-delay: 1s;
+    transform: translateX(50px);
+    opacity: 0;
+    filter: blur(10px);
+}
+
+.img2 {
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 400px;
+    transform: translateX(400px) scaleX(0);
+    transform-origin: left;
+}
+
+.imagens:hover .img2 {
+    transition: 8s;
+    transform: translateX(-400px) scaleX(1);
+}
+
+.div-title {
+    padding: 100px 75px;
+}
+.bigTitle {
+    color:#fff;
+    font-family: 'Lobster', cursive;
+    font-size: 100px;
+    text-shadow: 0 0 20px black;
+}
+.medTitle {
+    color:#fff;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    text-shadow: 0 0 20px black;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    min-height: 100px;
+    z-index: 2;
+}
+
+.header-active {
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 0 20px black;
+    text-shadow:  0.1em 0.1em 0.2em black;
+    transition: linear 0.1s;
+}
+
+.header-active .menu a {
+    color: #37164D !important;
+    transition: linear 0.1s;
+}
+
+.header-active .div-logo .company-name strong {
+    color: rgb(34, 33, 33);
+}
+
+.menu {
+    position: relative;
+    top: 38px;
+    float: right;
+    z-index: 3;
+    right: 50px;
+    transition: linear 0.3s;
+}
+
+.menu a {
+    color: #fff;
+    text-shadow:#aa7a13;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 0px 16px;
+    transition: linear 0.3s;
+}
+
+.div-logo {
+    position: fixed;
+    z-index: 3;
+    max-width: 90px;
+    top: 12px;
+    left: 4em;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+.company-name {
+    font-family: 'Fredoka One', cursive;
+    color: #DD1C6E;
+    position: fixed;
+    left: 3.5em;
+    top: 0.3em;
+    font-size: 47px;
+}
+
+.company-name strong {
+    color: #fff;
+    font-weight: bold;
+    text-shadow:0.1em 0.1em 0.1em black #aa7a13;
+}
+
+#funcionalidades h1 {
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#funcionalidades div {
+    margin-top: 40px;
+}
+
+#funcionalidades div img {
+    width: 220px;
+}
+
+.last-icon {
+    width: 171px !important;
+    margin-top: 25px !important;
+}
+
+.func {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.func3-descricao {
+    position: relative;
+    top: 15px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    background: rgb(235, 232, 232);
+  }
+#area #formulario
+{
+  margin: 0 auto;
+  position: relative;
+  display:block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    font-family: "Segoe UI","Arial","Times New Roman";
+    font-size: 18px;
+  color: #fff;
+}
+fieldset
+{
+  background-color:#b30fa5;
+  padding: auto;
+}
+#formulario input.campo_email
+{
+  background-color:#aa769f;
+  position:relative;
+  display: inline-block;
+  padding: 15px 200px;
+  border-radius: 30px;
+  
+}
+#formulario input.campo_email {
+    text-align: center;
+    font-family: "Segoe UI","Arial","Times New Roman";
+    font-size: 18px;
+  color: #fff;
+}
+
+legend
+{
+  font-weight:bold;
+  font-family: "Segoe UI","Arial","Times New Roman";
+  color: #ccc;
+}
+#formulario label
+{
+  position:absolute;
+  left:19px;
+  margin-right:5px;
+}
+.button {
+    background-color: #c9122b; 
+    position:absolute;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    
+}
+.button:hover {
+    background-color: #4CAF50; 
+    color: white;
+    box-shadow: 0 14px 18px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button {
+    margin-top: 10;    
+    border-radius: 30px;
+    padding: 15px 200px;
+    width: 30em;
+}
+.button:active {
+    background-color: #2e967c;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .dust {
+    position: absolute;
+  }
